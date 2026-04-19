@@ -1,0 +1,21 @@
+name: MonnetalX
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+jobs:
+  run-monnetalx:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: write
+
+    steps:
+      - name: Run MonnetalX
+        uses: c4rtune/MonnetalX@v1.0.0
+        with:
+          github_token: ${{ secrets.MONNETAL_X_TOKEN }}
+          deepseek_api_key: ${{ secrets.DEEPSEEK_API_KEY }}
