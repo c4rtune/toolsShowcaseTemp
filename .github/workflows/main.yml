@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Run MonnetalX
-        uses: c4rtune/MonnetalX@v1.0.0
+        uses: c4rtune/MonnetalX@v1.0.1
         with:
           github_token: ${{ secrets.MONNETAL_X_TOKEN }}
           deepseek_api_key: ${{ secrets.DEEPSEEK_API_KEY }}
