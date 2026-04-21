@@ -2,7 +2,11 @@ name: MonnetalX
 
 on:
   pull_request:
-    types: [opened, synchronize]
+    types: 
+      - opened
+      - synchronize
+      - edited
+
 
 jobs:
   run-monnetalx:
