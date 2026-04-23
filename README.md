@@ -1,4 +1,5 @@
 Link 1: https://github.com/rust-lang/rust/pull/60785
+
 Link 2: https://github.com/electron/electron/pull/25522
 
 MonneltalX Link Summarize tool evaluation form
